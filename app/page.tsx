@@ -48,7 +48,7 @@ function HomePage() {
   }, []);
 
   return (
-    <div className="flex flex-col w-full pt-4 mx-auto flex-1 h-full justify-between">
+    <div className="flex flex-col w-full px-4 pt-4 mx-auto h-full justify-between">
       <ul className="space-y-4 overflow-y-auto" ref={scrollRef}>
         {messages
           .filter((msg) => (msg as Message).id !== "initial-msg")
@@ -76,7 +76,7 @@ function HomePage() {
         <div className="relative">
           <Input
             autoFocus
-            className="w-full text-base bg-secondary h-12"
+            className="w-full text-base bg-secondary h-12 pr-12"
             value={input}
             placeholder="Discuss your problems here..."
             onChange={handleInputChange}
